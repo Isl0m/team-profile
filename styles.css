@@ -3,6 +3,34 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+body.dark-mode .profile-card {
+    background: #333;
+}
+
+button#dark-mode-toggle {
+    background: #e0e0e0;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+body.dark-mode button#dark-mode-toggle {
+    background: #333;
+    color: #fff;
 }
 
 h1.title {
@@ -15,7 +43,6 @@ main.profiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
     margin-top: 2rem;
 }
